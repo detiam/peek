@@ -223,6 +223,7 @@ Author: Philipp Wolfer <ph.wolfer@gmail.com>
                       <item id="gif" translatable="yes">GIF</item>
                       <item id="apng" translatable="yes">APNG</item>
                       <item id="webm" translatable="yes">WebM</item>
+                      <item id="webp" translatable="yes">WebP</item>
                       <item id="mp4" translatable="yes">MP4</item>
                     </items>
                     <signal name="changed" handler="on_output_format_changed" swapped="no"/>
@@ -350,7 +351,7 @@ Author: Philipp Wolfer <ph.wolfer@gmail.com>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">4</property>
               </packing>
             </child>
             <child>
@@ -392,7 +393,7 @@ Author: Philipp Wolfer <ph.wolfer@gmail.com>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">4</property>
+                <property name="position">5</property>
               </packing>
             </child>
             <child>
@@ -435,21 +436,6 @@ Author: Philipp Wolfer <ph.wolfer@gmail.com>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">5</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="recording_capture_mouse">
-                <property name="label" translatable="yes">Capture mouse cursor</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">False</property>
-                <property name="halign">start</property>
-                <property name="draw-indicator">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
                 <property name="position">6</property>
               </packing>
             </child>
@@ -465,7 +451,22 @@ Author: Philipp Wolfer <ph.wolfer@gmail.com>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">6</property>
+                <property name="position">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="recording_capture_mouse">
+                <property name="label" translatable="yes">Capture mouse cursor</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="halign">start</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">8</property>
               </packing>
             </child>
           </object>
