@@ -173,6 +173,10 @@ namespace Peek.Ui {
         this.recorder.config, "gifski_quality",
         SettingsBindFlags.DEFAULT);
 
+      settings.bind ("recording-palette-downsample",
+        this.recorder.config, "palette_downsample",
+        SettingsBindFlags.DEFAULT);
+
       settings.bind ("recording-framerate",
         this.recorder.config, "framerate",
         SettingsBindFlags.DEFAULT);
