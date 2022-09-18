@@ -96,6 +96,7 @@ namespace Peek.Ui {
     private GLib.Settings settings;
 
     private const int SMALL_WINDOW_SIZE = 400;
+    private const int SMALLER_WINDOW_SIZE = 200;
 
     public ApplicationWindow (Peek.Application application,
       ScreenRecorder recorder) {
@@ -218,6 +219,7 @@ namespace Peek.Ui {
       this.show.connect (() => {
         show_size_indicator ();
         update_format_label ();
+        remove_title ();
       });
 
       stop_button_label = stop_button.label;
@@ -350,7 +352,7 @@ namespace Peek.Ui {
         }
 
         time_indicator_timeout = 0;
-        headerbar.set_custom_title (null);
+        remove_title ();
         return false;
       });
     }
@@ -460,6 +462,12 @@ namespace Peek.Ui {
     private void update_ui_size (RecordingArea area) {
       // Set the scale of shortcut_label
       Pango.AttrList attrs = new Pango.AttrList ();
+
+      if (area.width < SMALLER_WINDOW_SIZE) {
+        pop_menu_button.visible = false;
+      } else {
+        pop_menu_button.visible = true;
+      }
 
       if (area.width < SMALL_WINDOW_SIZE) {
         GtkHelper.hide_button_label (record_button);
@@ -594,8 +602,9 @@ namespace Peek.Ui {
       headerbar.set_custom_title (box);
     }
 
-    private void hide_spinner () {
-      headerbar.set_custom_title (null);
+    private void remove_title () {
+      var box = new Box (Gtk.Orientation.HORIZONTAL, 0);
+      headerbar.set_custom_title (box);
     }
 
     private void toggle_recording () {
@@ -617,6 +626,7 @@ namespace Peek.Ui {
         debug ("Recording area: %i, %i, %i, %i\n",
         area.left, area.top, area.width, area.height);
         active_recording_area = area;
+        update_ui_size (area);
 
         try {
           recorder.record (area);
@@ -663,7 +673,7 @@ namespace Peek.Ui {
       record_button.show ();
       pop_menu_button.set_sensitive (true);
       unfreeze_window_size ();
-      hide_spinner ();
+      remove_title ();
 
       if (in_file != null) {
         debug ("Deleting temp file %s\n", in_file.get_uri ());
