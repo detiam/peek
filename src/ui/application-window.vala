@@ -190,7 +190,7 @@ namespace Peek.Ui {
         this.recorder.config, "capture_mouse",
         SettingsBindFlags.DEFAULT);
 
-      settings.bind ("recording-capture-sound",
+      settings.bind ("recording-capture-audio-device",
         this.recorder.config, "capture_sound",
         SettingsBindFlags.DEFAULT);
 

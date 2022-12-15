@@ -192,14 +192,14 @@ namespace Peek.Recording {
 
       if (config.output_format == OutputFormat.WEBM) {
         pipeline.append ("vp8enc cpu-used=16 max-quantizer=17 deadline=1 keyframe-mode=disabled threads=%T static-threshold=1000 buffer-size=20000 ! ");
-        if (config.capture_sound) {
+        if (config.capture_sound != "none") {
           pipeline.append ("queue ! mux. pulsesrc ! queue ! audioconvert ! vorbisenc ! ");
         }
         pipeline.append ("queue ! mux. webmmux name=mux");
       } else if (config.output_format == OutputFormat.MP4) {
         pipeline.append ("x264enc speed-preset=fast threads=%T ! ");
         pipeline.append ("video/x-h264, profile=baseline !");
-        if (config.capture_sound) {
+        if (config.capture_sound != "none") {
           pipeline.append ("queue ! mux. pulsesrc ! queue ! audioconvert ! lamemp3enc ! ");
         }
         pipeline.append ("queue ! mux. mp4mux name=mux");
