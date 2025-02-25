@@ -1,23 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Philipp\ Wolfer\ <ph.wolfer@gmail.com>
 # This file is distributed under the same license as the peek package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2025 Detiam <dehe_tian@outlook.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: peek\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-26 04:11+0800\n"
-"PO-Revision-Date: 2020-02-10 06:52+0000\n"
-"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"peek/translations/zh_Hans/>\n"
+"PO-Revision-Date: 2025-02-26 04:26+0800\n"
+"Last-Translator: Detiam <dehe_tian@outlook.com>\n"
+"Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/application.vala:63
 msgid "Show the version of the program and exit"
@@ -127,7 +125,7 @@ msgstr "WebM"
 #: src/ui/application-window.vala:307 ui/application-window.ui:386
 #: ui/preferences.ui:226
 msgid "WebP"
-msgstr ""
+msgstr "WebP"
 
 #: src/ui/application-window.vala:318
 #, c-format
@@ -295,7 +293,7 @@ msgstr "GIF 质量"
 
 #: ui/preferences.ui:317
 msgid "Use a palette to downsample the image"
-msgstr ""
+msgstr "使用调色板对图像进行下采样"
 
 #: ui/preferences.ui:341 data/com.uploadedlobster.peek.gschema.xml:68
 msgid "Framerate"
@@ -311,15 +309,15 @@ msgstr "录制开始前延迟的秒数"
 
 #: ui/preferences.ui:468
 msgid "Capture sound from PULSE device"
-msgstr ""
+msgstr "从 PULSE 设备捕获声音"
 
 #: ui/preferences.ui:482
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: ui/preferences.ui:483
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: ui/preferences.ui:502
 msgid "Capture mouse cursor"
@@ -468,7 +466,7 @@ msgstr "gifski编码器的清晰度设置"
 
 #: data/com.uploadedlobster.peek.gschema.xml:58
 msgid "Whether to Use a palette to downsample the image"
-msgstr ""
+msgstr "是否使用调色板对图像进行下采样"
 
 #: data/com.uploadedlobster.peek.gschema.xml:73
 msgid "Resolution downsampling factor"
@@ -480,7 +478,7 @@ msgstr "是否捕获鼠标光标"
 
 #: data/com.uploadedlobster.peek.gschema.xml:81
 msgid "Capture sound from the specific PULSE input device"
-msgstr ""
+msgstr "从指定 PULSE 输入设备捕获声音"
 
 #: data/com.uploadedlobster.peek.gschema.xml:85
 msgid "Size and position of the last open main window"
