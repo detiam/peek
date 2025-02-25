@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: peek\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-03 19:49+0100\n"
+"POT-Creation-Date: 2025-02-26 04:11+0800\n"
 "PO-Revision-Date: 2017-11-16 07:43+0000\n"
 "Last-Translator: Alessandro <gort818@gmail.com>\n"
 "Language-Team: Neapolitan <https://hosted.weblate.org/projects/peek/"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Start Peek without the header bar"
 msgstr "Cummencia Peek senza d' 'o header bar"
 
-#: src/application.vala:94 data/com.uploadedlobster.peek.desktop.in:3
+#: src/application.vala:94 data/com.uploadedlobster.peek.desktop.in:2
 #: data/com.uploadedlobster.peek.appdata.xml.in:7
 msgid "Peek"
 msgstr ""
@@ -87,97 +87,107 @@ msgstr ""
 msgid "FFmpeg executable not found."
 msgstr ""
 
-#: src/ui/application-window.vala:119
+#: src/ui/application-window.vala:126
 msgid "An unexpected error occurred during recording. Recording was aborted."
 msgstr ""
 
-#: src/ui/application-window.vala:250
+#: src/ui/application-window.vala:266
 msgid "Rendering animation…"
 msgstr ""
 
-#: src/ui/application-window.vala:251
+#: src/ui/application-window.vala:267
 msgid "Peek will close when rendering is finished."
 msgstr ""
 
-#: src/ui/application-window.vala:287 ui/application-window.ui:353
+#: src/ui/application-window.vala:303 ui/application-window.ui:352
 #: ui/preferences.ui:224
 msgid "APNG"
 msgstr ""
 
-#: src/ui/application-window.vala:288 ui/application-window.ui:337
+#: src/ui/application-window.vala:304 ui/application-window.ui:336
 #: ui/preferences.ui:223
 msgid "GIF"
 msgstr ""
 
-#: src/ui/application-window.vala:289 ui/application-window.ui:370
+#: src/ui/application-window.vala:305 ui/application-window.ui:403
+#: ui/preferences.ui:227
+msgid "MP4"
+msgstr "MP4"
+
+#: src/ui/application-window.vala:306 ui/application-window.ui:369
 #: ui/preferences.ui:225
 msgid "WebM"
 msgstr "WebM"
 
-#: src/ui/application-window.vala:300
+#: src/ui/application-window.vala:307 ui/application-window.ui:386
+#: ui/preferences.ui:226
+msgid "WebP"
+msgstr ""
+
+#: src/ui/application-window.vala:318
 #, c-format
 msgid "Record as %s"
 msgstr "Riggistra comme %s"
 
-#: src/ui/application-window.vala:411
+#: src/ui/application-window.vala:435
 #, c-format
 msgid "Start / Stop: %s"
 msgstr ""
 
-#: src/ui/application-window.vala:563
+#: src/ui/application-window.vala:597
 msgid "Rendering…"
 msgstr ""
 
-#: src/ui/application-window.vala:603
+#: src/ui/application-window.vala:639
 msgid "Recording could not be started due to an unexpected error."
 msgstr ""
 
-#: src/ui/application-window.vala:723 src/ui/application-window.vala:728
+#: src/ui/application-window.vala:759 src/ui/application-window.vala:764
 msgid "Save animation"
 msgstr "Salva animazione"
 
-#: src/ui/application-window.vala:724 src/ui/application-window.vala:731
+#: src/ui/application-window.vala:760 src/ui/application-window.vala:767
 msgid "_Save"
 msgstr "_Salva"
 
-#: src/ui/application-window.vala:725 src/ui/application-window.vala:729
+#: src/ui/application-window.vala:761 src/ui/application-window.vala:765
 msgid "_Cancel"
 msgstr "_Cancella"
 
-#: src/ui/application-window.vala:796
+#: src/ui/application-window.vala:832
 msgid "The file could not be saved to the selected location."
 msgstr ""
 
-#: src/ui/application-window.vala:823
+#: src/ui/application-window.vala:859
 #, c-format
 msgid "Animation saved as “%s”"
 msgstr "l'Animazione salvata comme \"%s\""
 
 #. Unity does not allow actions on notifications, so we disable
 #. notification actions there.
-#: src/ui/application-window.vala:833
+#: src/ui/application-window.vala:869
 msgid "Click here to show the saved file in your file manager."
 msgstr ""
 
-#: src/ui/application-window.vala:835
+#: src/ui/application-window.vala:871
 msgid "Show in file manager"
 msgstr "Mustra dint' file manager"
 
 #. Display the configured shortcut to the user
-#: src/ui/preferences-dialog.vala:195
+#: src/ui/preferences-dialog.vala:218
 msgid "deactivated"
 msgstr ""
 
 #. Add a button to change the keyboard shortcut
-#: src/ui/preferences-dialog.vala:206 src/ui/preferences-dialog.vala:222
+#: src/ui/preferences-dialog.vala:229 src/ui/preferences-dialog.vala:245
 msgid "Change"
 msgstr "Cagne"
 
-#: src/ui/preferences-dialog.vala:219
+#: src/ui/preferences-dialog.vala:242
 msgid "Press keys…"
 msgstr ""
 
-#: ui/about.ui.in:37 data/com.uploadedlobster.peek.desktop.in:5
+#: ui/about.ui.in:37 data/com.uploadedlobster.peek.desktop.in:4
 msgid "Animated GIF recorder"
 msgstr ""
 
@@ -187,7 +197,7 @@ msgctxt "Translator credits in about dialog"
 msgid "translator-credits"
 msgstr "Alessandro Toia"
 
-#: ui/application-window.ui:33 ui/application-window.ui:185
+#: ui/application-window.ui:33 ui/application-window.ui:266
 msgid "Start recording"
 msgstr ""
 
@@ -195,7 +205,7 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: ui/application-window.ui:68 ui/set-window-size-dialog.ui:23
+#: ui/application-window.ui:68 ui/set-window-size-dialog.ui:127
 msgid "Set window size"
 msgstr ""
 
@@ -207,15 +217,15 @@ msgstr ""
 msgid "About Peek"
 msgstr ""
 
-#: ui/application-window.ui:149
+#: ui/application-window.ui:230
 msgid "_Stop"
 msgstr "_Ferma"
 
-#: ui/application-window.ui:159
+#: ui/application-window.ui:240
 msgid "Stop recording"
 msgstr ""
 
-#: ui/application-window.ui:175
+#: ui/application-window.ui:256
 msgid "_Record"
 msgstr "_Riggista"
 
@@ -263,60 +273,72 @@ msgstr ""
 msgid "Output format"
 msgstr ""
 
-#: ui/preferences.ui:250 data/com.uploadedlobster.peek.gschema.xml:45
+#: ui/preferences.ui:252 data/com.uploadedlobster.peek.gschema.xml:49
 msgid "Use gifski for high quality GIFs"
 msgstr ""
 
-#: ui/preferences.ui:275
+#: ui/preferences.ui:277
 msgid "GIF quality"
 msgstr ""
 
-#: ui/preferences.ui:325 data/com.uploadedlobster.peek.gschema.xml:60
+#: ui/preferences.ui:317
+msgid "Use a palette to downsample the image"
+msgstr ""
+
+#: ui/preferences.ui:341 data/com.uploadedlobster.peek.gschema.xml:68
 msgid "Framerate"
 msgstr ""
 
-#: ui/preferences.ui:367
+#: ui/preferences.ui:383
 msgid "Resolution downsampling"
 msgstr ""
 
-#: ui/preferences.ui:409 data/com.uploadedlobster.peek.gschema.xml:55
+#: ui/preferences.ui:425 data/com.uploadedlobster.peek.gschema.xml:63
 msgid "Delay in seconds before recording starts"
 msgstr ""
 
-#: ui/preferences.ui:442
+#: ui/preferences.ui:468
+msgid "Capture sound from PULSE device"
+msgstr ""
+
+#: ui/preferences.ui:482
+msgid "None"
+msgstr ""
+
+#: ui/preferences.ui:483
+msgid "Default"
+msgstr ""
+
+#: ui/preferences.ui:502
 msgid "Capture mouse cursor"
 msgstr ""
 
-#: ui/preferences.ui:457
-msgid "Capture sound from default PULSE device"
-msgstr ""
-
-#: ui/preferences.ui:488
+#: ui/preferences.ui:533
 msgid "Peek preferences"
 msgstr ""
 
-#: ui/set-window-size-dialog.ui:27
+#: ui/set-window-size-dialog.ui:56
+msgid "Width"
+msgstr ""
+
+#: ui/set-window-size-dialog.ui:94
+msgid "Height"
+msgstr ""
+
+#: ui/set-window-size-dialog.ui:131
 #, fuzzy
 msgid "Cancel"
 msgstr "_Cancella"
 
-#: ui/set-window-size-dialog.ui:36
+#: ui/set-window-size-dialog.ui:140
 msgid "Set size"
 msgstr ""
 
-#: ui/set-window-size-dialog.ui:89
-msgid "Width"
-msgstr ""
-
-#: ui/set-window-size-dialog.ui:127
-msgid "Height"
-msgstr ""
-
-#: data/com.uploadedlobster.peek.desktop.in:6
+#: data/com.uploadedlobster.peek.desktop.in:5
 msgid "Record short animated GIF images from your screen"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.desktop.in:7
+#: data/com.uploadedlobster.peek.desktop.in:6
 msgid "screencast;screen recorder;screen capture;GIF;WebM;APNG;"
 msgstr ""
 
@@ -331,7 +353,7 @@ msgid ""
 "showing UI features of your own apps or for showing a bug in bug reports. "
 "With Peek you simply place the Peek window over the area you want to record "
 "and press \"Record\". Peek is optimized for generating animated GIFs, but "
-"you can also directly record to WebM if you prefer."
+"you can also directly record to WebM or MP4 if you prefer."
 msgstr ""
 
 #: data/com.uploadedlobster.peek.appdata.xml.in:20
@@ -347,7 +369,7 @@ msgid "Save recorded video as an optimized animated GIF"
 msgstr ""
 
 #: data/com.uploadedlobster.peek.appdata.xml.in:24
-msgid "Record directly to WebM format"
+msgid "Record directly to WebM or MP4 format"
 msgstr ""
 
 #: data/com.uploadedlobster.peek.appdata.xml.in:25
@@ -370,22 +392,23 @@ msgstr ""
 msgid ""
 "Peek is not a general purpose screencast app with extended features but "
 "rather focuses on the single task of creating small, silent screencasts of "
-"an area of the screen for creating GIF animations or silent WebM videos."
+"an area of the screen for creating GIF animations or silent WebM or MP4 "
+"videos."
 msgstr ""
 
-#: data/com.uploadedlobster.peek.appdata.xml.in:40
+#: data/com.uploadedlobster.peek.appdata.xml.in:41
 msgid "The main window to select the recording area"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.appdata.xml.in:44
+#: data/com.uploadedlobster.peek.appdata.xml.in:45
 msgid "Peek's preferences dialog"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.appdata.xml.in:48
+#: data/com.uploadedlobster.peek.appdata.xml.in:49
 msgid "Peek is recording itself"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.appdata.xml.in:78
+#: data/com.uploadedlobster.peek.appdata.xml.in:79
 msgid "Philipp Wolfer"
 msgstr "Philipp Wolfer"
 
@@ -413,36 +436,37 @@ msgstr ""
 msgid "Global keybinding to toggle recording"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.gschema.xml:41
+#: data/com.uploadedlobster.peek.gschema.xml:45
 msgid "Output file format"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.gschema.xml:50
+#: data/com.uploadedlobster.peek.gschema.xml:54
 msgid "Quality setting for the gifski GIF encoder"
 msgstr ""
 
-#: data/com.uploadedlobster.peek.gschema.xml:65
-msgid "Resolution downsampling factor"
-msgstr ""
-
-#: data/com.uploadedlobster.peek.gschema.xml:69
-msgid "Whether to capture the mouse cursor"
+#: data/com.uploadedlobster.peek.gschema.xml:58
+msgid "Whether to Use a palette to downsample the image"
 msgstr ""
 
 #: data/com.uploadedlobster.peek.gschema.xml:73
-msgid "Whether to capture sound from default PULSE input device"
+msgid "Resolution downsampling factor"
 msgstr ""
 
 #: data/com.uploadedlobster.peek.gschema.xml:77
-msgid "Size and position of the last open main window"
+msgid "Whether to capture the mouse cursor"
 msgstr ""
 
 #: data/com.uploadedlobster.peek.gschema.xml:81
-msgid "Path where last video got saved"
+msgid "Capture sound from the specific PULSE input device"
 msgstr ""
 
-#~ msgid "MP4"
-#~ msgstr "MP4"
+#: data/com.uploadedlobster.peek.gschema.xml:85
+msgid "Size and position of the last open main window"
+msgstr ""
+
+#: data/com.uploadedlobster.peek.gschema.xml:89
+msgid "Path where last video got saved"
+msgstr ""
 
 #~ msgid "com.uploadedlobster.peek"
 #~ msgstr "com.uploadedlobster.peek"
